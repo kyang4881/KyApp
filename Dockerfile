@@ -1,11 +1,10 @@
-# FROM node:lts-alpine as build
-FROM node:19.5.0-alpine as build
+FROM node:lts-alpine as build
 
 WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install 
+# RUN npm install 
 
 COPY . .
 
